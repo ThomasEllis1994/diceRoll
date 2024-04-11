@@ -1,2 +1,8 @@
 # diceRoll
-Module 1 Lab 6. In this repository, I will be creating a website with a dice functionality perfect for any game night.
+Module 1 Lab 6.
+Select the sides and the amount of dice thrown.
+
+User Stories and Design Specifications:
+
+User Stories:
+
