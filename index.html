@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Die Roll Simulator</title>
+        <meta charset="UTF-8" />
+        <meta name="author" content="Thomas Ellis" />
+        <meta name="keywords" content="Dice Roll, Die, Dice, Boardgames" />
+        <style>
+            * {
+                font-family: "Times New Roman", Times, serif;
+            }
+
+            body {
+                margin: 0;
+                padding: 0;
+            }
+            header {
+                text-align: center;
+                margin: 0;
+                padding: 0;
+            }
+
+            #result {
+                text-align: center;
+            }
+
+            #grid {
+                display: grid;
+                grid-template-columns: 33% 33% 33%;
+            }
+            .die {
+                text-align: center;
+            }
+            .img {
+                height: 50%;
+                width: 25%;
+            }
+            .img:hover {
+                cursor: pointer;
+            }
+            .different {
+                grid-column-start: 2;
+                grid-column-end: 3;
+            }
+            #yourRoll {
+                font-size: 2rem;
+                margin: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Welcome to the Die Simulator</h1>
+            <p>Please click the die you would like to use for your roll!</p>
+        </header>
+        <div id="result">
+            <h2>Your Roll</h2>
+            <p id="yourRoll">___</p>
+        </div>
+        <main id="grid">
+            <div class="die">
+                <h3 class="dieTitle">D4 Die</h3>
+                <img
+                    class="img"
+                    src="Pictures/D4_Die.png"
+                    alt="A D4 Die"
+                    onclick="die(4)"
+                />
+            </div>
+            <div class="die">
+                <h3 class="dieTitle">D6 Die</h3>
+                <img
+                    class="img"
+                    src="Pictures/D6_Die.png"
+                    alt="A D6 Die"
+                    onclick="die(6)"
+                />
+            </div>
+            <div class="die">
+                <h3 class="dieTitle">D8 Die</h3>
+                <img
+                    class="img"
+                    src="Pictures/D8_Die.png"
+                    alt="A D8 Die"
+                    onclick="die(8)"
+                />
+            </div>
+            <div class="die">
+                <h3 class="dieTitle">D10 Die</h3>
+                <img
+                    class="img"
+                    src="Pictures/D10_Die.png"
+                    alt="A D10 Die"
+                    onclick="die(10)"
+                />
+            </div>
+            <div class="die">
+                <h3 class="dieTitle">D12 Die</h3>
+                <img
+                    class="img"
+                    src="Pictures/D12_Die.png"
+                    alt="A D12 Die"
+                    onclick="die(12)"
+                />
+            </div>
+            <div class="die">
+                <h3 class="dieTitle">D20 Die</h3>
+                <img
+                    class="img"
+                    src="Pictures/D20_Die.png"
+                    alt="A D20 Die"
+                    onclick="die(20)"
+                />
+            </div>
+        </main>
+        <script src="index.js"></script>
+    </body>
+</html>
